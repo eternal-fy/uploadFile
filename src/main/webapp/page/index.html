@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-inverse class" role="navigation">
+	<div class="container-fluid">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="#">
+            <img src="img/logo.png" style="background-color: #0579ec;">
+        </a>
+	</div>
+	<div>
+		<ul class="nav navbar-nav navbar-right">
+			<li class="active"><a href="denglu.html" style="background-color: #289ddb;">登录</a></li>
+            <li><a href="#" style="color: #ffffff;">下载App</a></li>
+            <li><a href="#" style="color: #ffffff;">反馈</a></li>
+		</ul>
+	</div>
+	</div>
+</nav>
+<div style=" padding: 100px 100px 10px;">
+    <form class="bs-example bs-example-form" role="form">
+        <div class="col-md-1"></div>
+        <div class="col-md-2"></div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="input-group"style="width: 552px;">
+                    <input type="text" class="form-control" style="height: 44px;" placeholder="大家都在搜:投资">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" style="height: 44px;background-color: #398fe6;">
+                            <img src="img/sousuo.png">
+                        </button>
+                    </span>
+                </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+            <br>
+        </div><!-- /.row -->
+        <div class="col-md-4"></div>
+    </form>
+</div>
+<script>
+
+    $(function () {
+$.getJSON("/news/newsTitle",function (data) {
+     let obj=$(".text-center");
+    console.log(data);
+
+     for(let i=0;i<data.length;i++)
+     {
+         let line="<li><a href='#'>"+data[i].cat_name+"</a></li>";
+         console.log(line);
+         obj.append(line);
+     }
+
+})
+    })
+</script>
+    <div style="padding: 0px 15px 0px;">
+        <div class="col-md-1"></div>
+        <div class="col-md-2" style="height: 432;width: 147;">
+           <ul class="nav nav-pills nav-stacked text-center" style="padding: 10px 58px 10px 59px;">
+            <li class="active"><a href="#">推荐</a></li>
+
+
+           </ul>
+
+        </div>
+        <div class="col-md-6" style="height: 1080px;width: 740px;">
+            <div><div id="myCarousel" class="carousel slide" style="height: 240;width: 714px;">
+                <!-- 轮播（Carousel）指标 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>   
+                <!-- 轮播（Carousel）项目 -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img/banner.jpg" alt="First slide">
+                        <div class="carousel-caption">残忍！成都“江湖郎中”当街割除宠物狗声带 5分钟剪一个！</div>
+                    </div>
+                    <div class="item">
+                        <img src="img/banner.jpg" alt="Second slide">
+                        <div class="carousel-caption">残忍！成都“江湖郎中”当街割除宠物狗声带 5分钟剪一个！</div>
+                    </div>
+                    <div class="item">
+                        <img src="img/banner.jpg" alt="Third slide">
+                        <div class="carousel-caption">残忍！成都“江湖郎中”当街割除宠物狗声带 5分钟剪一个！/div>
+                    </div>
+                </div>
+                <!-- 轮播（Carousel）导航 -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a></div>
+            </div>
+            <div style="width: 714px;height: 210px;">
+                <div style="padding:10px 0px 10px 0px;color: #000000;font-size: 15px;">实拍德国的真实农村，百闻不如一见</div>
+                <div style="height: 140px;">
+                    <div class="col-md-4" style="padding:0px 20px 0px 0px">
+                        <a href="newsPage.html"><img src="img/content_tu_02_13.jpg"></a>
+                    </div>
+                    <div class="col-md-4" style="padding:0px 20px 0px 6px">
+                        <img src="img/content_tu_03_15.jpg">
+                    </div>
+                    <div class="col-md-4" style="padding:0px 15px 0px 12px">
+                        <img src="img/content_tu_03_15.jpg">
+                    </div>
+                </div>
+                <div style="height: 40px;padding:11px 20px 10px 3px">
+                    <p style="height: 16px;color: #A9A9A6;">钻石王老六·30分钟前·评论380次</p>
+                </div>
+            </div>
+            <div style="width: 714px;height: 210px;">
+                <div style="padding:10px 0px 10px 0px;color: #000000;font-size: 15px;">这些冒充爱新觉罗后裔的人当中，竟然还有从事风情行业的！</div>
+                <div style="height: 140px;">
+                    <div class="col-md-4" style="padding:0px 20px 0px 0px">
+                        <img src="img/content_tu_04_24.jpg">
+                    </div>
+                    <div class="col-md-4" style="padding:0px 20px 0px 6px">
+                        <img src="img/content_tu_05_25.jpg">
+                    </div>
+                    <div class="col-md-4" style="padding:0px 15px 0px 12px">
+                        <img src="img/content_tu_06_27.jpg">
+                    </div>
+                </div>
+                <div>
+                    <div style=" height: 16px;color: #A9A9A6; padding:11px 20px 10px 3px">
+                    小傻瓜·30分钟前·评论380次
+                    </div>
+                </div>
+            </div>
+            <div style="width: 714px;height: 210px;">
+                <div style="padding:10px 0px 10px 0px;color: #000000;font-size: 15px;   ">60岁大爷火了 直播“再来一瓣蒜”收粉200万</div>
+                <div style="height: 140px;">
+                    <div class="col-md-4" style="padding:0px 20px 0px 0px">
+                        <img src="img/content_tu_07_34.jpg">
+                    </div>
+                    <div class="col-md-4" style="padding:0px 20px 0px 6px">
+                        <img src="img/content_tu_08_35.jpg">
+                    </div>
+                    <div class="col-md-4" style="padding:0px 15px 0px 12px">
+                        <img src="img/content_tu_09_37.jpg">
+                    </div>
+                </div>
+                <div style="height: 40px;padding:11px 20px 10px 3px">
+                    <p style="height: 16px;color: #A9A9A6;">傻傻分不清·30分钟前·评论380次</p>
+                </div>
+            </div>
+            <div style="height: 166px;width: 714px;">
+                <img class="col-md-4" src="img/content_tu_10_41.jpg" style="padding: 12px 14px 0px 0px;">
+                <div class="col-md-8" style="height: 166px;">
+                    <p style="padding: 52px 0px 0px 0px;font-size: 17px">女人有这三个表现，绝对是和不少男人纠缠过，早就不纯了!</p>
+                    <div style="height: 0px 0px 55px 0px;color: #A9A9A6;">丢你个老毛·30分钟前·评论380次</div>
+                </div>
+            </div>  
+            </div>
+        </div>
+
+        <div class="col-md-2 " style="height: 850px;">
+            <div style="width: 242px;height: 300px;background-color: #E4E4E4; ">
+                <div  class="table-bordered" style="height: 32px;">
+                    <p style="padding: 10px 121px 1px 10px;font-size: 18px;color: #000000;">
+                        24小时热闻
+                    </p>
+                </div>
+                <div  class="table-bordered" style="height: 86px;">
+                    <img class="col-md-4" src="img/right_tu_01_03.jpg" style="height: 66;width: 66;padding: 10px 0px 5px 10px;">
+                    <div class="col-md-8" style="padding: 20px 22px 32px 5px;font-size: 12px;color:#000000;">笑死人不偿命的一百种作死的方式，你知道几种？</div>
+                </div>
+                <div  class="table-bordered" style="height: 96px;">
+                    <img class="col-md-4" src="img/right_tu_02_06.jpg" style="height: 66;width: 66;padding: 10px 0px 10px 10px;">
+                    <div class="col-md-8" style="padding: 20px 22px 32px 5px;font-size: 12px;color: #000000;">丁俊晖世界赛公开赛夺冠除了130多万奖金还有3大记录</div>
+                </div>
+                <div  class="table-bordered" style="height: 86px;">
+                    <img class="col-md-4" src="img/right_tu_03_08.jpg" style="height: 66;width: 66;padding: 0px 0px 10px 10px;">
+                    <div class="col-md-8" style="padding: 0px 22px 20px 5px;font-size: 12px;color: #000000;">  中巴空军联训战机缘何能指哪打哪？空军少将披露幕后原因</div>
+                </div>
+            </div>
+            <div style="width: 242px;height: 300px;background-color: #E4E4E4;margin-top: 20px;">
+                <div  class="table-bordered" style="height: 32px;">
+                    <p style="padding: 10px 121px 1px 10px;font-size: 18px;color: #000000;">
+                        精彩图片
+                    </p>
+                </div>
+                <div  class="table-bordered" style="height: 86px;">
+                    <img class="col-md-4" src="img/right_tu_04_10.jpg" style="height: 66;width: 66;padding: 10px 0px 5px 10px;">
+                    <div class="col-md-8" style="padding: 20px 22px 32px 5px;font-size: 12px;color:#000000;">笑死人不偿命的一百种作死的方式，你知道几种？</div>
+                </div>
+                <div  class="table-bordered" style="height: 96px;">
+                    <img class="col-md-4" src="img/right_tu_05_12.jpg" style="height: 66;width: 66;padding: 10px 0px 10px 10px;">
+                    <div class="col-md-8" style="padding: 20px 22px 32px 5px;font-size: 12px;color: #000000;">盘点香港男星片酬排行榜：成龙第二，第一位估计再多钱也请不动了</div>
+                </div>
+                <div  class="table-bordered" style="height: 86px;">
+                    <img class="col-md-4" src="img/right_tu_06_14.jpg" style="height: 66;width: 66;padding: 0px 0px 10px 10px;">
+                    <div class="col-md-8" style="padding: 0px 22px 20px 5px;font-size: 12px;color: #000000;">南方桔子上市了，外皮还是青色的，能吃吗？一招分辨公母有绝招！</div>
+                </div>
+            </div>
+            <div style="width: 242px;height: 200px;background-color: #E4E4E4;margin-top: 20px;">
+                <div > 
+                    <p style="padding: 10px  100px 0px 10px;font-size: 20px;color: #000000;">
+                        更多
+                    </p>
+                </div>
+                <div>
+                    <table class="table" style="margin: 0px 8px 25px 8px;width:228px">
+                        <tbody style="margin-left:0px ;font-size: 12px;">
+                          <tr>
+                            <td style="padding-left: 0px;">关于头条</td>
+                            <td style="padding-left: 0px;">加入头条</td>
+                            <td style="padding-left: 0px;">媒体报道</td>
+                            <td style="padding-left: 0px;">媒体合作</td>
+                          </tr>
+                          <tr>
+                            <td style="padding-left: 0px;">产品合作</td>
+                            <td style="padding-left: 0px;">合作说明</td>
+                            <td style="padding-left: 0px;">广告投放</td>
+                            <td style="padding-left: 0px;">联系我们</td>
+                          </tr>
+                          <tr>
+                              <td style="padding-left: 0px;">用户投诉</td>
+                              <td style="padding-left: 0px;">侵权投诉</td>
+                              <td style="padding-left: 0px;">廉洁举报</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+<video  controls="controls" width="500px" height="500px">
+    <source src="video/bike.mp4" type="video/mp4">
+    <source src="video/sea.mp4" type="video/mp4">
+</video>
+
+<video id="vid" src="video/sea.mp4" controls="controls" width="500px" height="500px">
+
+</video>
+<button onclick="pause()">pause</button>
+<button onclick="play()">play</button>
+<audio src="audio/庐州月.mp3" autoplay controls></audio>
+</div>
+<div>
+    <div id="place" style="border:black 10px solid;width: 300px;height: 300px"
+    ondragover="allowDrop(event)" ondrop="drop(event)"
+    >
+        here
+    </div>
+    <img width="100px" height="100px" id="pic" src="pic/scene.png" draggable="true" ondragstart="drag(event)">
+</div>
+<script>
+    function pause(){
+        vid.pause();
+        let mes;
+        mes="pause"
+        console.log(mes)
+    }
+
+
+    function play() {
+       let vid;
+       vid=document.getElementById("vid");
+     vid.play();
+     console.log(mes)
+    }
+
+    function allowDrop(ev)
+    {
+        console.log(ev)
+        ev.preventDefault();
+    }
+
+    function drag(ev)
+    {
+        console.log(ev)
+        ev.dataTransfer.setData("Text",ev.target.id);
+    }
+
+    function drop(ev)
+    {
+        ev.preventDefault();
+        var data=ev.dataTransfer.getData("Text");
+        ev.target.appendChild(document.getElementById(data));
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>注册</title>
+<style>
+	.div_reg{
+		margin:0 auto;
+		height: 800px;
+		text-align: center;
+		background-color: rgb(242,241,239);
+		color:rgb(169,169,169) ;
+	}
+	h2{
+		text-align:center;
+		color: rgb(103,174,224);
+	}
+	
+	.number{
+		width:238px;
+		height:34px;
+		margin-bottom: 33px;  
+	}
+	.pwd{
+		width:238px;
+		height:34px;
+		margin-bottom: 34px;
+	}
+	.div_1{
+		width:627px;
+		height:61px;
+		margin: 0px auto;
+		text-align: center;
+	}
+	
+	.sub{
+		width:238px;
+		height:61px;
+		background-color:#289ddb;
+		color:white;
+	}
+	.beij{
+		height: 500px;
+		width: 730px;
+		background-color: white;
+		margin:0 auto;
+	}
+	.img{
+		height: 63px;
+		width: 730px;
+		text-align: left;	
+		margin:0 auto;
+	}
+	.end{
+		margin-top: 36px;
+		color:rgb(185,185,185) ;
+	}
+	#nav {
+   margin: 0 auto;
+   background-color: rgb(33,33,33);
+   color:white;
+	  }
+	  #nav-l {	   
+	   padding-left: 200px;
+	   padding-top: 10px;
+	   padding-bottom: 10px;
+	   float: left;
+	   position:relative;
+	  }
+	  #nav-r {   
+	   padding-left: 1250px;
+	   padding-top: 10px;
+	   padding-bottom: 10px;   
+	  }
+	  a{
+	  	text-decoration: none;
+	  	color:white;
+	  }
+    a:active{
+        color:white; 
+    }
+    a:link{
+        color:rgb(185,185,185);
+    }
+    a:hover { 
+        color:rgb(236, 188, 83); 
+        } 
+	</style>
+</head>
+
+<body>
+<form action="#" method="post">
+	<div id="nav">
+        <div id="nav-l"><span>宜企邦首页</span></div>
+        <div id="nav-r"><span><a href="denglu.html">登录通行证</a></span></div>
+    </div>
+	
+<div class="div_reg">
+	
+    <div style="height:54px ">
+    </div>
+    <div class="img">
+    	<a href="shouye.html"><img src="img/logo2.png" alt="Pulpit rock" width="190" height="63"></a>
+    </div>
+    <div style="height:20px"></div>
+    <div  class="beij">
+    	<div style="height:40px ;"></div>
+    	<div >
+    		<img src="img/shoujiicon.png" ><h2>手机注册</h2></div>
+    		<div class="users">
+	         <input type="text" class="number" id="number" placeholder="手机号码"/>
+	    </div>
+	    <div class="users">
+			<input type="password" class="pwd" id="pwd" placeholder="密码"/>
+	    </div>
+    	<div class="users">
+        	<input type="password" class="pwd" id="rpwd" placeholder="再次输入密码"/>
+        </div>
+		<div class="div_1">
+        	<span  ><input type="checkbox" id="ok" value="false">同意协议</span>
+        
+			<span><a href="#">用户协议</a></span>
+		</div>
+	<div>
+		<input type="submit" class="sub" value="立即注册" onclick="on()"/>
+  </div> 
+  <div class="end">Copyright@2017yiqibang.com Inc.All Rights Reserved宜企邦公司  版权所有<br>
+      <span><a href="shouye.html">返回首页</a></span>
+   
+  </div>
+ </div>
+ 
+</form>
+</body>
+<!--<script type="text/javascript">
+function on(){
+	var username=document.getElementById("number");
+	var pwd=document.getElementById("pwd");
+	var rpwd=document.getElementById("rpwd");
+	var ok=document.getElementById("ok");
+	if(username.value==""){
+		alert("用户名不能为空")
+	}
+	if(pwd.value!=rpwd.value){
+	    alert("两个密码不同")
+	 }
+	if(ok.value!="true"){
+    	 alert("请同意用户协议")
+     }
+}
+</script>-->
+</html>

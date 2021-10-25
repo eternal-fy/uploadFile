@@ -1,0 +1,279 @@
+@charset "utf-8";
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: #e5ecf5;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: #cccccc;
+    text-decoration:none;
+}
+.cha{
+	float:right;
+}
+.l_float {
+    float: left;
+}
+
+.r_float {
+    float: right;
+}
+.l_clear {
+    clear: left;
+    display: block;
+    overflow: hidden;
+    content:"";
+}
+.r_clear {
+    clear: right;
+    display: block;
+    overflow: hidden;
+    content:"";
+}
+.b_clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    content:"";
+}
+.show {
+    display: block;
+}
+.hidden {
+    display: none;
+}
+
+/* 
+.container{
+    height: 100%;
+    width:100%;
+} */
+
+
+
+
+.login_body{
+    width: 500px;
+    height:700px;
+    margin:auto;
+    margin-top: 70px;
+
+}
+.login_body>.login_form{
+    width: 100%;
+    /* background: #fff; */
+}
+
+.login_body>.login_form>.login_top,
+.login_body>.login_form>.login_con{
+    background-color: #fff;
+}
+
+.login_body>.login_form>.login_top{
+    /* padding-bottom: 30px; */
+    
+    padding: 20px 30px 10px 30px;
+    
+
+}
+
+.login_body>.login_form>.login_top>img{
+    height: 30px;
+    float:right;
+    cursor: pointer;
+}
+
+
+.login_body>.login_form>.login_top>.login_tags{
+/*    border-bottom: 2px solid #d9d9d9;*/
+    padding: 10px 0 0;
+  
+}
+
+.login_body>.login_form>.login_top>.login_tags{
+    /* margin: 10px 0 20px 0; */
+
+}
+
+.login_body>.login_form>.login_top>.login_tags>span{
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #d9d9d9;
+
+
+}
+
+.login_body>.login_form>.login_top>.login_tags>.active{
+        border-bottom: 2px solid #2986ce;
+        color:#2986ce;
+}
+
+.login_body>.login_form>.login_con{
+    padding: 20px 30px;
+}
+
+.login_body>.login_form>.login_con>form>div{
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.login_body>.login_form>.login_con>form>div>img{
+    width: 24px;
+    position: absolute;
+    bottom: 32px;
+    left: 0;
+}
+
+
+
+
+
+.login_body>.login_form>.login_con>form>div>label{
+    font-size: 14px;
+}
+
+.login_body>.login_form>.login_con>form>div>input{
+    display: block;
+    margin-top: 10px;
+}
+
+.login_body>.login_form>.login_con>form>div>input[type=text],
+.login_body>.login_form>.login_con>form>div>input[type=password],
+.login_body>.login_form>.login_con>form>div>button[type=submit]{
+    padding: 0 29px;
+    outline: none;
+    height: 40px;
+    width: 350px;
+    border: none;
+    border-bottom: 2px solid #cccccc;
+    color: #333;
+    font-size: 16px; 
+/*    position: relative;*/
+}
+
+
+
+.login_form>.login_con>form>div>#auth_code{
+    width: 255px;
+    font-size: 22px;
+    padding-right: 4px;
+}
+.login_body>.login_form>.login_con>form>div>.auth_code{
+    height: 42px;
+    margin-top: 10px;
+    margin-left: 4px;
+    width: 114px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #cccccc;
+    background-color: #fff;
+    
+}
+
+.login_body>.login_form>.login_con>form>div>button[type=submit]{
+    background-color:  #2986ce;
+    width: 320px;
+    margin-left: 50px;
+    border-bottom: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+
+
+.login_body>.login_form>.login_con>form>div>a{
+    font-size: 12px;
+    line-height: 40px;
+}
+
+.login_body>.login_form>.login_con>.qr_code{
+    text-align: center;
+}
+.login_body>.login_form>.login_con>.qr_code>img{
+    width: 140px;
+}
+.login_body>.login_form>.login_con>.qr_code>p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.login_body>.login_form>.login_otherAccount{
+    margin: auto;
+    padding: 12px 20px;
+    font-size: 12px;
+    border-top: 1px solid #d9d9d9;
+    background-color: #fafbfc;
+
+
+}
+.login_body>.login_form>.login_otherAccount>span{
+    margin-right: 4px;
+   color: #cccccc;
+
+}
+
+.login_body>.login_form>.login_otherAccount>a{
+    /* margin-right: 2px; */
+    margin: auto;
+}
+.login_body>.login_form>.login_otherAccount>a>img{
+    height: 24px;
+    vertical-align: middle;
+    margin:0 30px;
+}
+
+
+.login_body>.login_ad{
+    width: 700px;
+    height: 558px;;
+    overflow: hidden;
+    background-image: url('../imgs/timg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    text-align: center;
+
+
+    box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.35);
+
+    /* height: 100%; */
+   
+}
+.login_body>.login_ad>a{
+    
+    border-radius: 50px;
+    position: absolute;
+    bottom: 15.5%;
+    left: 296px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #703EFF;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #703EFF;
+
+    /* left: 0; */
+}
+.login_body>.login_ad>a:hover{
+
+    background-color: #fff;
+    border: 1px solid #703EFF;
+    color: #703EFF;
+}
+input[type='checkbox']{
+    display: inline-block;
+}
+

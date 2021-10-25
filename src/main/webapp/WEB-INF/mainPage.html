@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/welcome.css">
+    <script src="webjars/jquery/3.1.1/jquery.min.js"></script>
+    <style>
+        .backgroundWrap {
+            font-family: Arial;
+            display: flex;
+            flex-direction: column;
+            background-repeat: no-repeat;
+            background-image: url("../pic/universe2.jpeg");
+            background-size: 100% 100%;
+            width: 100%;
+            height: 800px;
+        }
+
+        .top {
+            position: fixed;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 72px;
+            z-index: 9999;
+        }
+
+        .top:hover {
+            background: white;
+            height: 200px;
+        }
+
+        .top:hover .items {
+            color: black;
+        }
+
+        .top:hover a[href="#"] {
+            color: black;
+        }
+
+        #nav {
+            height: 100%;
+        }
+
+        .items {
+            overflow: hidden;
+            transition: height 0s linear;
+            height: 0px;
+        }
+
+        .logo {
+            margin-left: 100px;
+            color: red;
+        }
+
+        .headIcon {
+            height: 100%;
+            margin-left: 100px;
+        }
+
+        #nav {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .items li {
+            line-height: 20px;
+            list-style: none;
+        }
+
+        .items li:hover {
+            background: #31b0d5;
+        }
+
+        .list {
+            line-height: 72px;
+            display: inline-block;
+            margin-left: 35px;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin-top: 92px;
+            padding-top: 72px;
+        }
+
+        .left {
+            height: 500px;
+            min-width: 100px;
+            width: 300px;
+            background: #e1f5d3;
+            padding: 100px 10px;
+
+        }
+
+        .center {
+            margin-left: 300px;
+            height: 500px;
+            min-width: 100px;
+            width: 300px;
+            background: #e1f5d3;
+            padding: 100px 10px;
+        }
+
+        .right {
+            height: auto;
+
+        }
+
+        a[href="#"] {
+            text-decoration: none;
+            color: white;
+        }
+
+        a[href="#"]:hover {
+            border-bottom: 3px solid #31b0d5;
+        }
+
+        .list:hover .items {
+            transition: height 0.5s;
+            height: 120px;
+        }
+
+        .data {
+            margin: 20px auto;
+            max-width: 500px;
+            background-color: white;
+        }
+        button{
+            margin-top: 50px;
+        }
+        .quare{
+            border-radius: 10px;
+            background: white;
+            box-shadow: 5px 3px 5px grey;
+            margin-top: 2px;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+<script>
+    let nav = document.getElementsByClassName("list");
+    console.log(nav)
+
+
+</script>
+<div class="backgroundWrap">
+    <div class="top">
+        <div class="logo"><a href="www.baidu.com"
+                             style="text-shadow: 0 0 10px red;line-height: 72px;font-size: 2em;text-decoration: none;color: red">❤</a>
+        </div>
+        <div class="headIcon">
+            <ul id="nav">
+
+                <li class="list">
+                    <a href="#">第一个</a>
+                    <ul class="items">
+                        <li>1</li>
+                        <li>1</li>
+                        <li>1</li>
+                    </ul>
+                </li>
+                <li class="list">
+                    <a href="#">第一个</a>
+                    <ul class="items">
+                        <li>1</li>
+                        <li>1</li>
+                        <li>1</li>
+                    </ul>
+                </li>
+                <li class="list">
+                    <a href="#">第一个</a>
+                    <ul class="items">
+                        <li>1</li>
+                        <li>1</li>
+                        <li>1</li>
+                    </ul>
+                </li>
+                <li class="list">
+                    <a href="#">第一个</a>
+                    <ul class="items">
+                        <li>1</li>
+                        <li>1</li>
+                        <li>1</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="left">
+            <table>
+                <form action="/fileupload1" method="post" enctype="multipart/form-data">
+                    <tr>
+                        <th>软件管理实验报告提交处</th>
+                    </tr>
+                    <tr>
+                        <th><input type="file" name="uploadFile"></th>
+                    </tr>
+                    <tr>
+                        <th><input type="submit" value="提交"></th>
+                    </tr>
+                </form>
+            </table>
+
+            <button class="search_for_submit1"><h2>search for students who have submitted</h2></button>
+            <div class="data1">
+
+            </div>
+        </div>
+        <div class="center">
+            <div>
+                <table>
+                    <form action="/fileupload2" method="post" enctype="multipart/form-data">
+                        <tr>
+                            <th>游戏程序设计实验提交处</th>
+                        </tr>
+                        <tr>
+                            <th><input type="file" name="uploadFile"></th>
+                        </tr>
+                        <tr>
+                            <th><input type="submit" value="提交"></th>
+                        </tr>
+                    </form>
+                </table>
+                <button class="search_for_submit2"><h2>search for students who have submitted</h2></button>
+                <div class="data2">
+
+                </div>
+            </div>
+<!--            <button class="search_for_users"><h2>search for users</h2></button>-->
+<!--            <table class="data">-->
+<!--                <thead>-->
+<!--                <tr>-->
+<!--                    <td>name</td>-->
+<!--                    <td>age</td>-->
+<!--                    <td>username</td>-->
+<!--                </tr>-->
+<!--                </thead>-->
+<!--                <tbody class="usertbody">-->
+
+<!--                </tbody>-->
+<!--            </table>-->
+        </div>
+        <div class="right">
+
+        </div>
+    </div>
+</div>
+<script>
+    var ans = null;
+    $(function () {
+            $(".search_for_users").click(function () {
+                $.ajax({
+                    url: "/getUsers", success: function (result) {
+                        $(".usertbody").empty();
+                        for (i in result) {
+                            $(".usertbody").append("<tr><td>" + result[i].name + "</td><td>" + result[i].age + "</td><td>" + result[i].username + "</td></tr>")
+                        }
+
+                    }
+                })
+
+            })
+
+
+            $(".search_for_submit1").click(function () {
+                $.ajax({
+                    url: "/getSoftware", success: function (result) {
+                        $(".data1").empty();
+                        ans = result;
+                        for (i in result) {
+                            $(".data1").append("<div class='quare'>" + result[i] + "</div>")
+                        }
+
+                    }
+                })
+
+            })
+
+
+         $(".search_for_submit2").click(function () {
+            $.ajax({
+                url: "/getGame", success: function (result) {
+                    $(".data2").empty();
+                    ans = result;
+                    for (i in result) {
+                        $(".data2").append("<div class='quare'>" + result[i] + "</div>")
+                    }
+
+                }
+            })
+
+        })
+
+
+        }
+    )
+</script>
+</body>
+</html>
